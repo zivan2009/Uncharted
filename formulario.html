@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- Informa al navegador que versión de HTML (o XML) se usó para escribir el documento. Doctype es una declaración no una etiqueta. -->
+<html lang="es"> <!-- Inicio de la página -->
+  <head> <!-- Encabezado de la pagina, aqui va informacion que lee el navegador -->
+    <meta charset="utf-8"> <!-- especifica la codificación de caracteres del documento — es decir, el conjunto de caracteres que el documento puede usar. utf-8 es un conjunto de caracteres universal que incluye casi todos los caracteres de casi cualquier idioma humano-->
+    <title>Formulario</title><!-- Titulo de la página, lo que se vera en la pestaña del navegador -->
+    <link rel="stylesheet" href="estilos.css">  <!--especifica la relación entre el documento actual y un recurso externo, en este caso una hoja de estilos -->
+  </head> <!-- Cierre de la etiqueta head -->
+  <body> <!-- Apertura de la etiqueta body, a partir de aqui comienza la informacion que se vera en la página -->
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="sobre_mi.html">Sobre mi</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="#">Formulario</a>
+    </nav>
+  </header>
+    <section class="form-login"> <!-- Se crea una seccion para colocar el formulario y se crea una clase "form-login" para posteriormente aplicarle CSS -->
+      <h5>Formulario</h5> <!-- Se crea el titulo para el formulario -->
+      <input class="controls" type="text" name="usuario" value="" placeholder="usuario "> <!-- Se crea una caja de texto para recibir en este caso el nombre de usuario que ingresara quien use la pagina, se especifica que va a ser de tipo texto y que el texto q contendra esa caja es "usuario" que es lo que se coloca en la parte placeholder-->
+      <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña"> <!-- Es igual una caja de texto, pero con la diferencia que en vez de recibir texto plano, recibira una contraseña por lo que apareceran asteriscos o guiones segun el navegador -->
+      <input class="buttons" type="submit" name="" value="Entrar"> <!-- Se crea el boton "Ingresar para habilitarlo se le escribe que es de tipo submit y se le escribe la palabra que queremos que lleve en este caso "Entrar" -->
+      <p><a href="#">¿Olvidastes tu Contraseña?</a></p> <!-- Se crea una etiqueta parrafo en la cual se colocara esta pregunta y se le agrega un link para redireccion a otra pagina donde se realizaran las acciones para recuperar la cuenta -->
+    </section> <!-- Fin de la etiqueta seccion -->
+  </body> <!-- Fin de la etiqueta body -->
+</html> <!-- Fin de la etiqueta html -->
